@@ -6,6 +6,7 @@ from tkinter import filedialog, messagebox, ttk
 from PIL import Image, ImageTk
 import threading
 import graphviz
+random.seed(42)
 
 class GraphApp:
     def __init__(self, root):

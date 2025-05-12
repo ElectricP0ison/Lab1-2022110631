@@ -9,8 +9,6 @@ import graphviz
 import random
 from collections import defaultdict
 random.seed(42)
-import numpy as np
-
 
 class TextGraphApp:
     def __init__(self, root):
