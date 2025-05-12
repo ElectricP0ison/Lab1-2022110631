@@ -10,6 +10,7 @@ import random
 from collections import defaultdict
 random.seed(42)
 import numpy as np
+import pandas as pd
 
 
 class TextGraphApp:
