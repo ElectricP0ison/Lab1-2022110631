@@ -6,7 +6,11 @@ from tkinter import filedialog, messagebox, ttk
 from PIL import Image, ImageTk
 import threading
 import graphviz
+<<<<<<< HEAD
 random.seed(42)
+=======
+import numpy as np
+>>>>>>> C4
 
 class GraphApp:
     def __init__(self, root):
