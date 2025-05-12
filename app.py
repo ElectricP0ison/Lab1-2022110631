@@ -3,7 +3,6 @@ from tkinter import filedialog, messagebox, scrolledtext
 import networkx as nx
 import re
 import os
-import matplotlib.pyplot as plt
 from matplotlib.backends.backend_tkagg import FigureCanvasTkAgg
 import graphviz
 import random
