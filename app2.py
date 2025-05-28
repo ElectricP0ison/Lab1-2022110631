@@ -333,7 +333,7 @@ class GraphApp:
             self.bridge_result.config(text=f"The bridge words from {word1} to {word2} are: {bridges_str}")
 
     def process_text(self):
-        new_text = self.newtext_entry.get()
+        new_text = self.newtext_entry.get().lower()
         words = re.findall(r'\b\w+\b', new_text)
         if len(words) < 2:
             self.newtext_result.config(text=new_text)
