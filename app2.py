@@ -317,7 +317,7 @@ class GraphApp:
         word1 = self.word1_entry.get().lower()
         word2 = self.word2_entry.get().lower()
         
-        if word1 not in self.graph or word2 not in self.graph:
+        if word1 not in self.nodes or word2 not in self.nodes:
             self.bridge_result.config(text=f"No {word1} or {word2} in the graph!")
             return
         
@@ -345,7 +345,7 @@ class GraphApp:
             b = words[i+1].lower()
             result.append(words[i])
             
-            if a in self.graph and b in self.graph:
+            if a in self.nodes and b in self.nodes:
                 bridges = []
                 for word3 in self.graph.get(a, {}):
                     if b in self.graph.get(word3, {}):
@@ -361,7 +361,7 @@ class GraphApp:
         start = self.start_entry.get().lower()
         end = self.end_entry.get().lower()
         
-        if start not in self.graph or end not in self.graph:
+        if start not in self.nodes or end not in self.nodes:
             messagebox.showerror("错误", "单词不存在于图中")
             return
         
