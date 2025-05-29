@@ -1,6 +1,8 @@
 [run]
 source = ./
-omit = ./app.py
+omit =
+    ./app.py
+    test_*
 
 [report]
 show_missing = True
